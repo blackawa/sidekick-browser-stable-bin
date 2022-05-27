@@ -3,8 +3,8 @@
 # Maintainer: Jack Rubacha < rubacha.jack03@gmail.com >
 # Contributor: grueneerle
 pkgname=sidekick-browser-stable-bin
-pkgver=90.10.12.11868
-_pkgver=90.10.12.11868-c3ae050 # includes sequence after the pkgver using CDN source, using wget to see redirect
+pkgver=98.20.5.19752
+_pkgver=98.20.5.19752-7148351 # includes sequence after the pkgver using CDN source, using wget to see redirect
 pkgrel=1
 pkgdesc="Sidekick is a revolutionary new work OS based on the Chromium browser. Designed to be the ultimate online work experience, it brings together your team and every web tool you use – all in one interface"
 arch=('x86_64')
@@ -17,8 +17,8 @@ optdepends=('libu2f-host'
 provides=('www-browser')
 options=('!strip' '!emptydirs')
 install=${pkgname}.install
-source=("https://sidekick-cdn-production.meetsidekick.com/builds/sidekick-linux-release-x64-${_pkgver}.deb")
-sha512sums=('17bd28164ab174838583d2d55db2baa82dd0a4844a92370001daa43be6dd1cdb56efd02c65d68e94a55729c1c5e25289e3435bd349d1b2073550dbef1aa78d41')
+source=("https://fast-cdn.meetsidekick.com/builds/sidekick-linux-release-x64-${_pkgver}.deb")
+sha512sums=('9d4845e41d434bcd17285f0e5d4def6151ce5644a6249e5a516e972b3cc709247680c2d64f2df51f578f3819a15d79c0d314c57b61430db08b2d1bc77eac8cdc')
 
 package(){
 # Extract package data
